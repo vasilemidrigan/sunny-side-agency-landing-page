@@ -9,46 +9,46 @@ body {
   font-size: 18px;
 }
 
-header,
-div {
+* {
   border: 1px solid black;
 }
 
-header {
-  position: relative;
-  width: 100%;
-  height: 600px;
-}
-
-header .header__wrapper {
+header nav {
+  border: 1px solid red;
   position: absolute;
   top: 0;
   right: unset;
   bottom: unset;
   left: 0;
   width: 100%;
-  height: 600px;
 }
 
-header .header__wrapper img {
-  z-index: 0;
-}
-
-header .header__wrapper nav {
+header nav .logo .logo__img {
   position: absolute;
   top: 0;
   right: unset;
   bottom: unset;
   left: 0;
+  width: 50%;
+  height: auto;
 }
 
-header .header__wrapper nav .logo {
+header nav .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: unset;
+  left: unset;
   width: 50%;
+  height: auto;
 }
 
-header .header__wrapper nav .hamburger {
-  width: 50%;
-  float: right;
+header nav .hamburger .hamburger__menu {
+  width: 100%;
+}
+
+header nav .navigation {
+  display: none;
 }
 
 img {

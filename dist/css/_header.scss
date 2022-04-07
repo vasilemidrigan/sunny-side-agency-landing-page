@@ -2,31 +2,36 @@
 
 @import "position-absolute";
 
-header,
-div {
+* {
   border: 1px solid black;
 }
 
 header {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  .header__wrapper {
+  nav {
+    border: 1px solid red;
     @include position-absolute(0, unset, unset, 0);
     width: 100%;
-    height: 600px;
-    img {
-      z-index: 0;
+    .logo {
+      .logo__img {
+        @include position-absolute(0, unset, unset, 0);
+        width: 50%;
+        height: auto;
+      }
     }
-    nav {
-      @include position-absolute(0, unset, unset, 0);
-      .logo {
-        width: 50%;
+    .hamburger {
+      @include position-absolute(0, 0, unset, unset);
+      width: 50%;
+      height: auto;
+
+      .hamburger__menu {
+        width: 100%;
+
+
       }
-      .hamburger {
-        width: 50%;
-        float: right;
-      }
+    }
+    .navigation {
+      display: none;
     }
   }
+  
 }
