@@ -2,36 +2,9 @@
 
 @import "position-absolute";
 
-* {
-  border: 1px solid black;
-}
-
 header {
-  nav {
-    border: 1px solid red;
-    @include position-absolute(0, unset, unset, 0);
-    width: 100%;
-    .logo {
-      .logo__img {
-        @include position-absolute(0, unset, unset, 0);
-        width: 50%;
-        height: auto;
-      }
-    }
-    .hamburger {
-      @include position-absolute(0, 0, unset, unset);
-      width: 50%;
-      height: auto;
-
-      .hamburger__menu {
-        width: 100%;
-
-
-      }
-    }
-    .navigation {
-      display: none;
-    }
-  }
-  
+  background: url(../../images/mobile/image-header.jpg) left top no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 500px;
 }

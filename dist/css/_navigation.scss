@@ -1,0 +1,23 @@
+// Navigation
+
+@import "position-absolute";
+
+nav {
+  .logo {
+    background: url(../../images/logo.svg) left top no-repeat;
+    background-size: 170px 100px;
+    width: 170px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  .hamburger {
+    background: url(../../images/icon-hamburger.svg) left top no-repeat;
+    background-size: 100px 100px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+  }
+  .navigation {
+    display: none;
+  }
+}
