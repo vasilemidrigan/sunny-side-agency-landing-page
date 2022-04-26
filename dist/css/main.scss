@@ -8,7 +8,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,800;1,700&display=swap");
 
+img {
+  width: 100%;
+}
+
+h2 {
+  color: $very-dark-desaturated-blue;
+  font-family: Fraunces, sans-serif;
+  text-align: center;
+  font-size: 1.8em;
+  width: 80%;
+  margin: 50px auto 0 auto;
+}
+
 body {
+  color: $dark-grayish-blue;
+  width: 100%;
   font-family: Barlow, sans-serif;
-  width: 100vw;
+  main {
+    .block {
+      .text-block {
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        line-height: 1.6em;
+        a {
+          color: $very-dark-desaturated-blue;
+          text-transform: uppercase;
+          font-family: Fraunces;
+          font-size: 0.9em;
+          text-decoration: underline;
+          text-decoration-color: $yellow;
+          text-decoration-thickness: 5px;
+        }
+      }
+    }
+  }
 }

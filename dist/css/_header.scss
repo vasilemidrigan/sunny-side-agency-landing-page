@@ -1,10 +1,27 @@
 // Header
 
 @import "position-absolute";
+@import "variables";
 
 header {
   background: url(../../images/mobile/image-header.jpg) left top no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 500px;
   width: 100%;
   height: 500px;
+  .intro {
+    color: $white;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    font-family: Fraunces, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
+  }
+  .arrow {
+    background: url(../../images/icon-arrow-down.svg) left top no-repeat;
+    background-size: 50px 110px;
+    width: 50px;
+    height: 110px;
+    margin: 40px auto 0 auto;
+  }
 }
