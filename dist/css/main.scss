@@ -14,20 +14,28 @@ img {
 
 h2 {
   color: $very-dark-desaturated-blue;
-  font-family: Fraunces, sans-serif;
-  text-align: center;
   font-size: 1.8em;
   width: 80%;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Fraunces, sans-serif;
+  text-align: center;
 }
 
 body {
   color: $dark-grayish-blue;
   width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   font-family: Barlow, sans-serif;
   main {
     .block {
       .text-block {
+        padding: 40px 0 40px 0;
         text-align: center;
         width: 95%;
         margin: 0 auto;
@@ -41,6 +49,38 @@ body {
           text-decoration-color: $yellow;
           text-decoration-thickness: 5px;
         }
+      }
+      .content {
+        margin-bottom: 50px;
+      }
+    }
+    .first--image_bg {
+      background: url(../../images/mobile/image-graphic-design.jpg);
+      color: $dark-desaturated-cyan;
+    }
+    .second--image_bg {
+      background: url(../../images/mobile/image-photography.jpg);
+      color: $dark-desaturated-cyan;
+    }
+    .first--image_bg,
+    .second--image_bg {
+      background-size: 100% 550px;
+      height: 550px;
+      position: relative;
+      text-align: center;
+      .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        h3 {
+          font-size: 1.7em;
+        }
+      }
+    }
+    // Testimonial styles
+    .testimonials-wrapper {
+      h4 {
+        text-transform: uppercase;
       }
     }
   }
