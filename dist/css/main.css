@@ -147,7 +147,45 @@ body main .second--image_bg .content h3 {
   font-size: 1.7em;
 }
 
+body main .testimonials-wrapper {
+  text-align: center;
+}
+
 body main .testimonials-wrapper h4 {
   text-transform: uppercase;
+}
+
+body main .testimonials-wrapper .testimonials:nth-child(2) .testimonial--photo {
+  background-image: url("../../images/image-emily.jpg");
+}
+
+body main .testimonials-wrapper .testimonials:nth-child(3) .testimonial--photo {
+  background-image: url("../../images/image-thomas.jpg");
+}
+
+body main .testimonials-wrapper .testimonials:nth-child(4) .testimonial--photo {
+  background-image: url("../../images/image-jennie.jpg");
+}
+
+body main .testimonials-wrapper .testimonials {
+  margin-bottom: 60px;
+}
+
+body main .testimonials-wrapper .testimonials .testimonial--photo {
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+body main .testimonials-wrapper .testimonials .testimonial--content .name {
+  color: #23303e;
+  font-family: Fraunces;
+}
+
+body main .testimonials-wrapper .testimonials .testimonial--content .function {
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */

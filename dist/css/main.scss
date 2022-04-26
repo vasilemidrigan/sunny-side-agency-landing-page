@@ -79,8 +79,38 @@ body {
     }
     // Testimonial styles
     .testimonials-wrapper {
+      text-align: center;
       h4 {
         text-transform: uppercase;
+      }
+      .testimonials:nth-child(2) .testimonial--photo {
+        background-image: url("../../images/image-emily.jpg");
+      }
+      .testimonials:nth-child(3) .testimonial--photo {
+        background-image: url("../../images/image-thomas.jpg");
+      }
+      .testimonials:nth-child(4) .testimonial--photo {
+        background-image: url("../../images/image-jennie.jpg");
+      }
+      .testimonials {
+        margin-bottom: 60px;
+        .testimonial--photo {
+          background-repeat: no-repeat;
+          background-size: 80px 80px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+        .testimonial--content {
+          .name {
+            color: $very-dark-desaturated-blue;
+            font-family: Fraunces;
+          }
+          .function {
+            font-size: 0.8em;
+          }
+        }
       }
     }
   }
