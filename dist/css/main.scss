@@ -4,6 +4,7 @@
 @import "position-absolute";
 @import "header";
 @import "navigation";
+@import "footer";
 // Import Fonts
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,800;1,700&display=swap");
@@ -111,6 +112,15 @@ body {
             font-size: 0.8em;
           }
         }
+      }
+    }
+    // Image Collage
+    .image-collage {
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        width: 50%;
       }
     }
   }
