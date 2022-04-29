@@ -79,14 +79,14 @@ body {
 
 footer {
   background-color: #458c7e;
-  padding-top: 60px;
+  padding: 60px 0px;
   color: #25564b;
 }
 
 footer h3 {
   font-size: 1.9em;
   font-family: sans-serif;
-  margin: 0;
+  margin: 0 0 50px 0;
 }
 
 footer ul {
@@ -96,6 +96,7 @@ footer ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-left: 0;
 }
 
 footer .footer--icons {
@@ -108,6 +109,7 @@ footer .footer--icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 60px;
 }
 
 footer .footer--icons .socials {
@@ -141,32 +143,6 @@ footer .footer--icons .pinterest--img {
 footer .footer--icons .twitter--img {
   background: url(../../images/icon-twitter.svg) left top no-repeat;
   background-size: 25px 25px;
-}
-
-.wrapper {
-  background: url(image.svg) left top no-repeat;
-  background-size: 100px 100px;
-  width: 100px;
-  height: 100px;
-  display: block;
-}
-
-.wrapper-mask {
-  background: pink;
-  width: 100px;
-  height: 100px;
-  mask-image: url(image.svg);
-  -o-mask-image: url(image.svg);
-  -moz-mask-image: url(image.svg);
-  -ms-mask-image: url(image.svg);
-  -webkit-mask-image: url(image.svg);
-  mask-size: 100px 100px;
-  -o-mask-size: 100px 100px;
-  -moz-mask-size: 100px 100px;
-  -ms-mask-size: 100px 100px;
-  -webkit-mask-size: 100px 100px;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
 }
 
 img {
