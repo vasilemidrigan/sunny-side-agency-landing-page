@@ -3,6 +3,7 @@
 @import "position-absolute";
 
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,14 +17,34 @@ nav {
     height: 30px;
     margin-top: 20px;
   }
+  // Hamburger
   .hamburger {
     background: url(../../images/icon-hamburger.svg) left top no-repeat;
     background-size: 25px 25px;
     width: 25px;
     height: 25px;
     margin-top: 20px;
+    &:hover {
+      cursor: pointer;
+    }
   }
+  // Navigation Menu
   .navigation {
-    display: none;
+    background-color: $white;
+    position: absolute;
+    border: 1px solid purple;
+    width: 100%;
+    top: 100px;
+    right: 0;
+    ul {
+      padding-left: 0;
+      list-style: none;
+      text-align: center;
+      li {
+        margin: 0 auto;
+        border: 1px solid purple;
+        width: 50%;
+      }
+    }
   }
 }
