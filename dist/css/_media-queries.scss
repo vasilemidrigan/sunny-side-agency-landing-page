@@ -1,0 +1,56 @@
+// •••••••••••••••••• Media Queries
+
+@media screen and (min-width: 800px) {
+  body {
+    all: unset;
+    header,
+    main,
+    footer {
+      font-size: 0.8em;
+      max-width: 790px;
+      margin: 0 auto;
+    }
+    header {
+    }
+    main {
+      width: 100%;
+      .upper--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "block1 block1"
+          "block2 block2"
+          "firstImage secondImage";
+        .block--1 {
+          grid-area: block1;
+          flex-direction: row-reverse;
+        }
+        .block--2 {
+          grid-area: block2;
+          display: flex;
+        }
+        .block--1,
+        .block--2 {
+          display: flex;
+          .text-block {
+            text-align: left;
+            h2 {
+              margin-left: 0;
+            }
+          }
+        }
+        .first--image_bg {
+          grid-area: firstImage;
+        }
+        .second--image_bg {
+          grid-area: secondImage;
+        }
+        .image {
+          margin-bottom: -5px;
+        }
+      }
+    }
+    footer {
+    }
+  }
+}

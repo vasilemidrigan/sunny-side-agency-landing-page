@@ -349,4 +349,73 @@ body main .image-collage {
 body main .image-collage img {
   width: 50%;
 }
+
+@media screen and (min-width: 800px) {
+  body {
+    all: unset;
+  }
+  body header,
+  body main,
+  body footer {
+    font-size: 0.8em;
+    max-width: 790px;
+    margin: 0 auto;
+  }
+  body main {
+    width: 100%;
+  }
+  body main .upper--grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "block1 block1" "block2 block2" "firstImage secondImage";
+  }
+  body main .upper--grid .block--1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: block1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body main .upper--grid .block--2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: block2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .upper--grid .block--1,
+  body main .upper--grid .block--2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .upper--grid .block--1 .text-block,
+  body main .upper--grid .block--2 .text-block {
+    text-align: left;
+  }
+  body main .upper--grid .block--1 .text-block h2,
+  body main .upper--grid .block--2 .text-block h2 {
+    margin-left: 0;
+  }
+  body main .upper--grid .first--image_bg {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: firstImage;
+  }
+  body main .upper--grid .second--image_bg {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: secondImage;
+  }
+  body main .upper--grid .image {
+    margin-bottom: -5px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
