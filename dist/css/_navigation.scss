@@ -32,18 +32,40 @@ nav {
   .navigation {
     background-color: $white;
     position: absolute;
-    border: 1px solid purple;
     width: 100%;
+    height: 305px;
     top: 100px;
     right: 0;
+    .corner {
+      position: absolute;
+      top: -30px;
+      right: 0px;
+      border: 15px solid $white;
+      border-left: 15px solid transparent;
+      border-top: 15px solid transparent;
+    }
     ul {
+      font-size: 1.3em;
       padding-left: 0;
       list-style: none;
       text-align: center;
       li {
-        margin: 0 auto;
-        border: 1px solid purple;
+        margin: 30px auto;
         width: 50%;
+        cursor: pointer;
+      }
+      .navigation--list--contact {
+        background-color: $yellow;
+        width: 140px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        color: $very-dark-desaturated-blue;
+        text-transform: uppercase;
+        font-size: 0.75em;
+        font-family: "Fraunces";
       }
     }
   }
