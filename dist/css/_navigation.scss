@@ -16,6 +16,7 @@ nav {
     width: 170px;
     height: 30px;
     margin-top: 20px;
+    cursor: pointer;
   }
   // Hamburger
   .hamburger {
@@ -24,9 +25,15 @@ nav {
     width: 25px;
     height: 25px;
     margin-top: 20px;
-    &:hover {
-      cursor: pointer;
-    }
+    cursor: pointer;
+  }
+  .hamburger--active {
+    background: whitesmoke;
+    width: 25px;
+    height: 25px;
+    mask-image: url(../../images/icon-hamburger.svg);
+    mask-size: 25px 25px;
+    mask-repeat: no-repeat;
   }
   // Navigation Menu
   .navigation {

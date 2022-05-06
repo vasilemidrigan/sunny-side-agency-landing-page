@@ -9,6 +9,11 @@ footer {
   background-color: $dark-moderate-cyan;
   padding: 60px 0px;
   color: $dark-desaturated-cyan;
+  h3,
+  li,
+  .socials {
+    cursor: pointer;
+  }
   h3 {
     font-size: 1.9em;
     font-family: sans-serif;

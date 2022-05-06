@@ -30,6 +30,7 @@ nav .logo {
   width: 170px;
   height: 30px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 nav .hamburger {
@@ -38,10 +39,19 @@ nav .hamburger {
   width: 25px;
   height: 25px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
-nav .hamburger:hover {
-  cursor: pointer;
+nav .hamburger--active {
+  background: whitesmoke;
+  width: 25px;
+  height: 25px;
+  -webkit-mask-image: url(../../images/icon-hamburger.svg);
+          mask-image: url(../../images/icon-hamburger.svg);
+  -webkit-mask-size: 25px 25px;
+          mask-size: 25px 25px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 
 nav .navigation {
@@ -135,6 +145,12 @@ footer {
   color: #25564b;
 }
 
+footer h3,
+footer li,
+footer .socials {
+  cursor: pointer;
+}
+
 footer h3 {
   font-size: 1.9em;
   font-family: sans-serif;
@@ -195,6 +211,10 @@ footer .footer--icons .pinterest--img {
 footer .footer--icons .twitter--img {
   background: url(../../images/icon-twitter.svg) left top no-repeat;
   background-size: 25px 25px;
+}
+
+.hide--element--active {
+  display: none;
 }
 
 img {
